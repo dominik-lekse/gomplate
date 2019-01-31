@@ -620,3 +620,16 @@ conv.ToStrings in...
 $ gomplate -i '{{ conv.ToStrings nil 42 true 0xF (slice 1 2 3) }}'
 [nil 42 true 15 [1 2 3]]
 ```
+
+Converts the inputs to an array of `float64`s
+
+## `conv.ToStringMap`
+
+Converts the input map to a map which is indexed by strings. This is useful to achieve consistent iteration over keys of
+a map in the output of a template.
+
+```console
+$ gomplate -i '{{conv.ToInt (gt 1 2)}}'
+TODO complete the example with a loop
+```
+

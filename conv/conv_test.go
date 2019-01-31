@@ -326,3 +326,7 @@ func TestDict(t *testing.T) {
 		assert.Equal(t, d.expected, actual)
 	}
 }
+
+func TestToStringMap(t *testing.T) {
+	// TODO write test
+}

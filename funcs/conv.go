@@ -142,3 +142,8 @@ func (f *ConvFuncs) Default(def, in interface{}) interface{} {
 func (f *ConvFuncs) Dict(in ...interface{}) (map[string]interface{}, error) {
 	return conv.Dict(in...)
 }
+
+// ToStringMap -
+func (f *ConvFuncs) ToStringMap(in map[interface{}]interface{}) map[string]interface{} {
+	return conv.ToStringMap(in)
+}

@@ -328,3 +328,13 @@ func Dict(v ...interface{}) (map[string]interface{}, error) {
 	}
 	return dict, nil
 }
+
+// ToStringMap
+func ToStringMap(in map[interface{}]interface{}) map[string]interface{} {
+	stringMap := make(map[string]interface{}, len(in))
+	for k, v := range in {
+		stringKey := k.(string)
+		stringMap[stringKey] = v
+	}
+	return stringMap
+}
